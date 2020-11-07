@@ -80,6 +80,11 @@ export default {
           title: 'Inspire',
           to: '/inspire',
         },
+        {
+          icon: 'mdi-apps',
+          title: 'Proyectos',
+          to: '/proyectos',
+        },
       ],
       miniVariant: false,
       right: true,
