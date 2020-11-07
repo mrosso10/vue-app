@@ -1,16 +1,12 @@
 export const state = () => ({
-  all: [
-    {
-      nombre: 'Proyecto 1',
-    },
-    {
-      nombre: 'Proyecto 2',
-    },
-  ],
+  all: [],
 })
 
 export const mutations = {
   add(state, proyecto) {
     state.all.push(proyecto)
+  },
+  remove(state, proyecto) {
+    state.all.splice(state.all.indexOf(proyecto), 1)
   },
 }
