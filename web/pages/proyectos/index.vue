@@ -15,6 +15,12 @@
       | Crear
 </template>
 
+<style>
+table {
+  table-layout: fixed;
+}
+</style>
+
 <script>
 export default {
   computed: {

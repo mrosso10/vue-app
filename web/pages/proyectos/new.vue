@@ -21,9 +21,9 @@ form
   v-btn.mr-4(@click='submit') submit
   v-btn(@click='clear') clear
 
-  p Nombre: {{ name }}
-  p Mail: {{ email }}
-  p Sel: {{ select }}
+  //- p Nombre: {{ name }}
+  //- p Mail: {{ email }}
+  //- p Sel: {{ select }}
 </template>
 <style>
 form {
