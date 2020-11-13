@@ -47,13 +47,16 @@ export default {
   methods: {
     get_proyectos() {
       this.loading = true
-      const api = create({
-        baseURL: 'https://private-b26ea7-programando.apiary-mock.com',
-        headers: { Accept: 'application/json' },
-      })
+      this.get_proyectos_do()
+    },
+    set_proyectos(proyectos) {
+      this.proyectos = proyectos
+      this.loading = false
+    },
+    get_proyectos_do() {
+      const api = create({})
       api.get('/proyectos').then((response) => {
-        this.proyectos = response.data
-        this.loading = false
+        this.set_proyectos(response.data)
       })
     },
     borrar(proyecto) {
