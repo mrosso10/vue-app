@@ -28,7 +28,8 @@ table {
 </style>
 
 <script>
-import { create } from 'apisauce'
+// import { create } from 'apisauce'
+import { API } from '@/components/API.js'
 
 export default {
   data: () => ({
@@ -54,14 +55,13 @@ export default {
       this.loading = false
     },
     get_proyectos_do() {
-      const api = create({})
-      api.get('/proyectos').then((response) => {
+      API.getProyectos().then((response) => {
         this.set_proyectos(response.data)
       })
     },
-    borrar(proyecto) {
-      this.$store.commit('proyectos/remove', proyecto)
-    },
+    // borrar(proyecto) {
+    //   this.$store.commit('proyectos/remove', proyecto)
+    // },
   },
 }
 </script>

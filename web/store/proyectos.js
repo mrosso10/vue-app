@@ -3,6 +3,7 @@ export const state = () => ({
 })
 
 export const mutations = {
+  // TODO: borrar esto
   add(state, proyecto) {
     state.all.push(proyecto)
   },
