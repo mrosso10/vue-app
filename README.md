@@ -1,4 +1,7 @@
-# pg_system
+![CI](https://github.com/mrosso10/vue-app/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/mrosso10/vue-app/branch/master/graph/badge.svg)](https://codecov.io/gh/mrosso10/vue-app)
+
+# vue-app
 
 ## Build Setup
 
