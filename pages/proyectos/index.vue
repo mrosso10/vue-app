@@ -41,7 +41,7 @@ import API from '@/components/API.js'
 export default {
   // api,
   data: () => ({
-    loading: false, 
+    loading: false,
     proyectos: [],
   }),
   computed: {
