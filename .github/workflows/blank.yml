@@ -34,4 +34,7 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: test # will run `yarn test` command
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: lint
       - uses: codecov/codecov-action@v1
