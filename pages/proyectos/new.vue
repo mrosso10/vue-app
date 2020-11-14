@@ -18,8 +18,8 @@ form
 
   //- v-select(v-model='select' :items='items' :error-messages='selectErrors' label='Item' required='' @change='$v.select.$touch()' @blur='$v.select.$touch()')
   //- v-checkbox(v-model='checkbox' :error-messages='checkboxErrors' label='Do you agree?' required='' @change='$v.checkbox.$touch()' @blur='$v.checkbox.$touch()')
-  v-btn.mr-4(@click='submit') submit
-  v-btn.mr-4(@click='clear') clear
+  v-btn.mr-4(@click='submit' ref="submit") submit
+  v-btn.mr-4(@click='clear' ref="clear") clear
   v-btn(to="/proyectos") volver
 
   //- p Nombre: {{ name }}
@@ -93,8 +93,8 @@ export default {
   methods: {
     submit() {
       this.$v.$touch()
-      this.$store.commit('proyectos/add', { nombre: this.name })
-      this.$router.push({ name: 'proyectos' })
+      // this.$store.commit('proyectos/add', { nombre: this.name })
+      // this.$router.push({ name: 'proyectos' })
     },
     clear() {
       this.$v.$reset()
