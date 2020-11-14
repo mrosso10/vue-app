@@ -42,11 +42,11 @@ export default {
     name: { required, maxLength: maxLength(30) },
     email: { required, email },
     select: { required },
-    checkbox: {
-      checked(val) {
-        return val
-      },
-    },
+    // checkbox: {
+    //   checked(val) {
+    //     return val
+    //   },
+    // },
   },
 
   data: () => ({
